@@ -1,0 +1,209 @@
+<!-- <!DOCTYPE html> -->
+<!-- <html> -->
+<!-- <head> -->
+  <!-- <title>Credit Card Authentication</title> -->
+  <!-- <style> -->
+    <!-- body { -->
+      <!-- background-color: #f2f2f2; -->
+      <!-- font-family: Arial, sans-serif; -->
+      <!-- color: #333; -->
+    <!-- } -->
+
+    <!-- .container { -->
+      <!-- max-width: 400px; -->
+      <!-- margin: 0 auto; -->
+      <!-- padding: 20px; -->
+      <!-- background-color: #fff; -->
+      <!-- box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); -->
+    <!-- } -->
+
+    <!-- h1 { -->
+      <!-- text-align: center; -->
+    <!-- } -->
+
+    <!-- label { -->
+      <!-- display: block; -->
+      <!-- margin-bottom: 10px; -->
+    <!-- } -->
+
+    <!-- select, -->
+    <!-- input[type="text"], -->
+    <!-- input[type="password"] { -->
+      <!-- width: 100%; -->
+      <!-- padding: 10px; -->
+      <!-- border: 1px solid #ccc; -->
+      <!-- border-radius: 4px; -->
+      <!-- box-sizing: border-box; -->
+      <!-- font-size: 16px; -->
+      <!-- margin-bottom: 15px; -->
+    <!-- } -->
+
+    <!-- .submit-button { -->
+      <!-- background-color: #4CAF50; -->
+      <!-- color: #fff; -->
+      <!-- border: none; -->
+      <!-- padding: 10px 20px; -->
+      <!-- text-align: center; -->
+      <!-- text-decoration: none; -->
+      <!-- display: inline-block; -->
+      <!-- font-size: 16px; -->
+      <!-- border-radius: 4px; -->
+      <!-- cursor: pointer; -->
+      <!-- transition: background-color 0.3s ease; -->
+    <!-- } -->
+
+    <!-- .submit-button:hover { -->
+      <!-- background-color: #45a049; -->
+    <!-- } -->
+  <!-- </style> -->
+<!-- </head> -->
+<!-- <body> -->
+  <!-- <div class="container"> -->
+    <!-- <h1>Credit Card Authentication</h1> -->
+    <!-- <form> -->
+      <!-- <label for="cardType">Choose Credit Card:</label> -->
+      <!-- <select id="cardType" name="cardType"> -->
+        <!-- <option value="">Select a credit card				       </option> -->
+        <!-- <option value="1" >HBL PLATINUM CREDIT CARD			       </option> -->
+        <!-- <option value="2" >HBL GOLD CREDIT CARD    			       </option> -->
+        <!-- <option value="3" >HBL GREEN CREDIT CARD   			       </option> -->
+        <!-- <option value="4" >HBL WORLDMILES CREDIT CARD              </option> -->
+        <!-- <option value="5" >HBL VISA SIGNATURE CREDIT CARD	       </option> -->
+        <!-- <option value="6" >MCB VISA PLATINUM CREDIT CARD	       </option> -->
+        <!-- <option value="7" >MCB LITE CREDIT CARD				       </option> -->
+        <!-- <option value="8" >MCB VISA PREMIUM CREDIT CARD		       </option> -->
+        <!-- <option value="9" >MCB MASTERCARD TITANIUM CREDIT CARD     </option> -->
+        <!-- <option value="10">MCB VISA GOLD CREDIT CARD		       </option> -->
+        <!-- <option value="11">ALLIED VISA PLATINUM CREDIT CARD	       </option> -->
+        <!-- <option value="12">ALLIED CASH+ CREDIT CARD			  	   </option> -->
+        <!-- <option value="13">ALLIED VISA CLASSIC CREDIT CARD	  	   </option> -->
+        <!-- <option value="14">ALLIED MASTERCARD TITANIUM CREDIT CARD  </option> -->
+        <!-- <option value="15">ALLIED VISA GOLD CREDIT CARD			   </option> -->
+        <!-- <option value="16">UBL PLATINUM CREDIT CARD			       </option> -->
+        <!-- <option value="17">UBL TITANIUM CREDIT CARD			   	   </option> -->
+        <!-- <option value="18">UBL VISA CLASSIC CREDIT CARD			   </option> -->
+        <!-- <option value="19">UBL VISA GOLD CREDIT CARD			   </option> -->
+        <!-- <option value="20">UBL SILKBANK CO-BRAND CREDIT CARD       </option> -->
+      <!-- </select> -->
+
+      <!-- <label for="cardNumber">Credit Card Number:</label> -->
+      <!-- <input type="text" id="cardNumber" name="cardNumber" placeholder="Enter your credit card number"> -->
+
+      <!-- <label for="pinCode">PIN Code:</label> -->
+      <!-- <input type="password" id="pinCode" name="pinCode" placeholder="Enter your PIN code"> -->
+
+      <!-- <input type="submit" value="Authenticate" class="submit-button"> -->
+    <!-- </form> -->
+  <!-- </div> -->
+<!-- </body> -->
+<!-- </html> -->
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Credit Card Authentication</title>
+  <style>
+    body {
+      background-color: #f2f2f2;
+      font-family: Arial, sans-serif;
+      color: #333;
+    }
+
+    .container {
+      max-width: 400px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #fff;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 10px;
+    }
+
+    select,
+    input[type="text"],
+    input[type="password"] {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+      font-size: 16px;
+      margin-bottom: 15px;
+    }
+
+    .submit-button {
+      background-color: #4CAF50;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .submit-button:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Credit Card Authentication 12345</h1>
+    <form action="http://localhost:8080/UserAuthenticate" method="post">
+      <label for="cardType">Choose Credit Card:</label>
+      <select id="cardType" name="selectedCreditCard">
+        <option value="">Select a credit card</option>
+        <option value="1">HBL PLATINUM CREDIT CARD</option>
+        <option value="2">HBL GOLD CREDIT CARD</option>
+        <option value="3">HBL GREEN CREDIT CARD</option>
+        <option value="4">HBL WORLDMILES CREDIT CARD</option>
+        <option value="5">HBL VISA SIGNATURE CREDIT CARD</option>
+        <option value="6">MCB VISA PLATINUM CREDIT CARD</option>
+        <option value="7">MCB LITE CREDIT CARD</option>
+        <option value="8">MCB VISA PREMIUM CREDIT CARD</option>
+        <option value="9">MCB MASTERCARD TITANIUM CREDIT CARD</option>
+        <option value="10">MCB VISA GOLD CREDIT CARD</option>
+        <option value="11">ALLIED VISA PLATINUM CREDIT CARD</option>
+        <option value="12">ALLIED CASH+ CREDIT CARD</option>
+        <option value="13">ALLIED VISA CLASSIC CREDIT CARD</option>
+        <option value="14">ALLIED MASTERCARD TITANIUM CREDIT CARD</option>
+        <option value="15">ALLIED VISA GOLD CREDIT CARD</option>
+        <option value="16">UBL PLATINUM CREDIT CARD</option>
+        <option value="17">UBL TITANIUM CREDIT CARD</option>
+        <option value="18">UBL VISA CLASSIC CREDIT CARD</option>
+        <option value="19">UBL VISA GOLD CREDIT CARD</option>
+        <option value="20">UBL SILKBANK CO-BRAND CREDIT CARD</option>
+      </select>
+
+      <label for="cardNumber">Credit Card Number:</label>
+      <input type="text" id="cardNumber" name="cardNumber" placeholder="Enter your credit card number">
+
+      <label for="pinCode">PIN Code:</label>
+      <input type="password" id="pinCode" name="pinCode" placeholder="Enter your PIN code">
+
+      <input type="submit" value="Authenticate" class="submit-button">
+    </form>
+  </div>
+</body>
+</html>
+
+

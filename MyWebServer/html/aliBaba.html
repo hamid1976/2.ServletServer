@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Bell Labs E-Shop</title>
+	<style>
+		* {
+			box-sizing: border-box;
+		}
+
+		body {
+			margin: 0;
+			padding: 0;
+			font-family: Arial, sans-serif;
+			background-color: #222222;
+		}
+
+		.container {
+			display: grid;
+			grid-template-rows: 80px auto;
+			height: 100vh;
+			background-color: #1f1f1f;
+		}
+
+		.header {
+			background-color: orangered;
+			color: #ffffff;
+			padding: 10px;
+			text-align: center;
+		}
+
+		.main {
+			display: grid;
+			grid-template-columns: 20% 80%;
+			background-color: #262626;
+			padding: 20px;
+			border-radius: 5px;
+			box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+		}
+
+		.left-pane {
+			background-color: #DAA520;
+			padding: 10px;
+			overflow: auto;
+		}
+
+		.right-pane {
+			display: grid;
+			grid-template-rows: 80% 20%;
+			background-color: #FF8C00	;
+			border: 1px solid #777777;
+			border-radius: 1px;
+			padding: 10px;
+			box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+		}
+
+		.product-frame {
+			background-color: #FFFFE0;
+			padding: 10px;
+			overflow: auto;
+		}
+
+		.address-frame {
+			background-color: #ffcdbf;
+			padding: 10px;
+			overflow: auto;
+		}
+
+		.frame {
+			width: 100%;
+			height: 100%;
+			border: none;
+		}
+
+		ul {
+			list-style-type: none;
+			padding: 0;
+		}
+
+		li {
+			margin-bottom: 10px;
+		}
+
+		.product {
+			display: flex;
+			align-items: center;
+			margin-bottom: 20px;
+		}
+
+		.product img {
+			width: 100px;
+			height: 100px;
+			object-fit: cover;
+			margin-right: 10px;
+		}
+
+		h2, h3 {
+			margin: 0;
+		}
+
+		p {
+			margin: 0;
+			color: #777777;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="header">
+			<h1>Bell Labs E-Shop</h1>
+		</div>
+		
+		
+		<div class="main">
+			<div class="left-pane">
+				<h2>Categories</h2>
+				<iframe src="http://localhost:8080/ProductTypeServlet" class="frame" name="ProductType"></iframe>
+		    </div>
+		</div>
+			
+			<div class="right-pane">
+				<div class="product-frame">
+										<iframe src="http://localhost:8080/ProductServlet" class="frame" name="product"></iframe>
+					<div class="product">
+
+						<img src="E:\cpu.webp" alt="Product 1">
+						<div>
+							<h3>Product 1</h3>
+						<p>Description of Product 1</p>
+					</div>
+					<div class="product">
+						<img src="path_to_image2.jpg" alt="Product 2">
+						<h3>Product 2</h3>
+						<p>Description of Product 2</p>
+					</div>
+					<!-- Add more products here -->
+				</div>
+				
+				<div class="address-frame">
+					<!-- Address frame content -->
+					<!-- Replace the placeholder content with your address details -->
+					<h2>Address</h2>
+					<p>123 Main Street, City, Country</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

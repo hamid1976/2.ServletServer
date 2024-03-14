@@ -1,0 +1,59 @@
+<form action=http://localhost:8080/AddRegistration>
+	Firstname
+	<input type=text name=name><br><br>
+	Lastname
+	<input type=text name=lname><br><br>
+	
+	<h4>Select Gender</h4>
+	<input type=radio name=gender value=male checked>
+	Male
+	<input type=radio name=gender value=female >
+	Female
+	<br><br>
+	
+	Username
+	<input type=text name=user><br><br>
+	Password
+	<input type=password name=pass><br><br>
+	Re-Type Password
+	<input type=password name=repass><br><br>
+	
+	<h4>Choose Your Favourite Languages</h4>
+	<input type=checkbox name=language value=c>
+	C
+	<input type=checkbox name=language value=java checked>
+	Java
+	<input type=checkbox name=language value=cpp>
+	CPP
+	<input type=checkbox name=language  value=oracle>
+	Oracle
+	<br><br>
+	
+	<h4>Select Your Favourite Color</h4>
+	<select name="Color">
+		<option value="RED"    >Red</option>
+		<option value="GREEN"  >Green</option>
+		<option value="YELLOW" >Yellow</option>
+		<option value="ORANGE" >Orange</option>
+		<option value="PINK"   selected>Pink</option>
+		<option value="BLACK"  >Black</option>
+		<option value="WHITE"  >White</option>
+	</select>
+	<br><br>
+	
+	<h4>Select Font Styles</h4>
+	<select name="Font">
+		<option value="BOLD"      >BOLD</option>
+		<option value="ITALIC"    selected>ITALIC</option>
+		<option value="PLAIN"     >PLAIN</option>
+		<option value="UNDERLINE" >UNDERLINE</option>
+		<option value="AERIAL"    >AERIAL</option>
+	</select>
+	<br><br>
+	
+	<h4>Write Your Comment Here</h4>
+	<textarea id=tarea name=Comment></textarea><br><br>
+	<input type=submit>
+	<input type=reset value=Clear>
+	
+</form>
